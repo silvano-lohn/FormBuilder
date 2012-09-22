@@ -9,6 +9,8 @@ import java.lang.annotation.Target;
 @Target(ElementType.FIELD)
 public @interface Component {
 	public ComponentType type();
-	public String label();	
+
+	public String label();
+	
 	public String attribute() default "";
 }
