@@ -130,7 +130,6 @@ public class FormBuilder extends TagHandler {
 
 	private InputText createInput(String label, String fieldName, String managedBeanName) {
 		InputText inputText = (InputText) createComponent(InputText.COMPONENT_TYPE);
-		System.err.println("#{" + managedBeanName + "." + fieldName + "}");
 		ValueExpression ve = FacesContext.getCurrentInstance().getApplication().getExpressionFactory().createValueExpression(FacesContext.getCurrentInstance().getELContext(), "#{" + managedBeanName + "." + fieldName + "}", Object.class);
 		inputText.setValueExpression("value", ve);
 		inputText.setId(getComponentId(fieldName));
