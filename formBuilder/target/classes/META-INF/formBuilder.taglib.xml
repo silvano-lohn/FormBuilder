@@ -7,5 +7,9 @@
 	<tag>
 		<tag-name>formBuilder</tag-name>
 		<handler-class>br.com.silvano.FormBuilder</handler-class>
+		<attribute>
+			<name>managedBean</name>
+			<required>true</required>
+		</attribute>
 	</tag>
 </facelet-taglib>
