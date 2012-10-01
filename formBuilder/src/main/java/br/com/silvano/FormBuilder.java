@@ -79,7 +79,7 @@ public class FormBuilder extends TagHandler {
 		panelGrid.getChildren().add(createOutputLabel(component.label(), fieldName));
 		switch (component.type()) {
 		case INPUT:
-			panelGrid.getChildren().add(createInputText(component.label(), fieldName));
+			panelGrid.getChildren().add(createInputText(fieldName));
 			break;
 		case CHECKBOX:
 			panelGrid.getChildren().add(createCheckBox(fieldName));
@@ -125,7 +125,7 @@ public class FormBuilder extends TagHandler {
 		return outputLabel;
 	}
 
-	private InputText createInputText(String label, String fieldName) {
+	private InputText createInputText(String fieldName) {
 		InputText inputText = (InputText) createComponent(InputText.COMPONENT_TYPE);
 		ValueExpression ve = createValueExpression("#{" + managedBeanName + "." + fieldName + "}");
 		inputText.setValueExpression("value", ve);
