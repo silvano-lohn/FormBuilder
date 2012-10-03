@@ -49,7 +49,7 @@ public class FormBuilder extends TagHandler {
 		}
 		Object managedBean = getManagedBean();
 		if (managedBean != null) {
-			PanelGrid panelGrid = createPanelGrid(1);
+			PanelGrid panelGrid = createPanelGrid(2);
 			parserFields(panelGrid, managedBean.getClass());
 			Collection<UIComponent> methodsCollection = new ArrayList<UIComponent>();
 			parserMethods(methodsCollection, managedBean);
