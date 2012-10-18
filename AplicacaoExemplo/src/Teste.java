@@ -1,3 +1,4 @@
+
 @Component(label="Label do Campo:", type=ComponentType.INPUT)
 String campoDaClasseDeControle1;
 @Component(label="Label do Campo:", type=ComponentType.CHECKBOX)
