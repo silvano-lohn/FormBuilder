@@ -1,13 +1,14 @@
+@Component(label="Label do Campo:", type=ComponentType.INPUT)
+String campoDaClasseDeControle1;
+@Component(label="Label do Campo:", type=ComponentType.CHECKBOX)
+String campoDaClasseDeControle2;
+
 
 @Button(caption="Texto do Botão")	
 public void metodoDaClasseDeControle() {
 
 }
 
-@Component(label="Label do Campo:", type=ComponentType.INPUT)
-String campoDaClasseDeControle1;
-@Component(label="Label do Campo:", type=ComponentType.CHECKBOX)
-String campoDaClasseDeControle2;
 
 
 @Model({
