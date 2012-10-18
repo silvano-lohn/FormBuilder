@@ -1,13 +1,5 @@
-import br.com.silvano.annotations.Button;
-import br.com.silvano.annotations.Component;
-import br.com.silvano.annotations.ComponentType;
-import br.com.silvano.annotations.Model;
 
-
-public class Teste {
-
-	
-@Button(caption="Texto do Botão")	
+@Button(caption="Texto do Bot√£o")	
 public void metodoDaClasseDeControle() {
 
 }
